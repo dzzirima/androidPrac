@@ -6,37 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.activities.MainActivity">
 
-    <Button
-        android:id="@+id/btnFragment1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fragment1"
-        app:layout_constraintEnd_toStartOf="@+id/Fragment2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></Button>
-
-    <Button
-        android:id="@+id/btnFragment2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fragment2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Fragment1"
-        app:layout_constraintTop_toTopOf="parent"></Button>
-
-    <FrameLayout
-        android:id="@+id/frmLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fragment1">
-
-    </FrameLayout>
 
     <fragment
         android:id="@+id/fragment"
@@ -44,11 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/my_nav" />
-
-
+        app:navGraph="@navigation/my_nav"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="176dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
