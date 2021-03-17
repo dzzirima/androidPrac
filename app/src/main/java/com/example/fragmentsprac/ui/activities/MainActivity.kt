@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
                 replace(R.id.frmLayout,fragment)
                 // so that we aplay the changes
                 commit()
-
             }
 
         }

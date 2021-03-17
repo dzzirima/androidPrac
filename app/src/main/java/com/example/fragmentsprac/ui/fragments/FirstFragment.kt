@@ -9,4 +9,6 @@ import com.example.fragmentsprac.R
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
 
+
+
 }
