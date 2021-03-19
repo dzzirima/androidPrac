@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_second.*
+import kotlinx.android.synthetic.main.fragment_second.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -38,7 +39,7 @@ class SecondFragment : Fragment() {
     ): View? {
         var view = inflater.inflate(R.layout.fragment_second, container, false)
         // Inflate the layout for this fragment
-        btn_second_fragment.setOnClickListener { Navigation.findNavController(view).navigate(R.id.navigate_to_first_fragment)
+        view.btn_second_fragment.setOnClickListener { Navigation.findNavController(view).navigate(R.id.navigate_to_first_fragment)
         }
         return view
     }
